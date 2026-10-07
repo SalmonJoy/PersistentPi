@@ -23,6 +23,12 @@ procedures. Some descriptions refer to evidence retained privately; absent paths
 are not fabricated replacement evidence. Older reports' historical tags and hashes
 identify the private scientific record, not public Git refs.
 
+The public `.gitattributes` disables automatic line-ending conversion because
+historical source anchors are byte hashes. This preserves, rather than bypasses,
+the real integrity checks across Windows and other checkouts. A normal public
+follow-up commit fixes a fresh-clone line-ending failure; no private source or
+original anchor was edited.
+
 ## Deliberate Code Differences
 
 Private constructors in `m08/benchmark.py`, `control_suite.py` and

@@ -1,0 +1,2 @@
+# Preserve frozen source/artifact bytes across Git and operating-system defaults.
+* -text
