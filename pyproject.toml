@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "persistentpi"
+version = "0.2.0"
+description = "Controlled coding experiments with scripted and local-model Runners"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+persistentpi = "persistentpi.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.data-files]
+"share/persistentpi/migrations" = ["migrations/*.sql"]
